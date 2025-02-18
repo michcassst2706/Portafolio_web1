@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 3</title>
+</head>
+<body>
+
+    <h1>Galería de Imágenes</h1>
+
+    <!-- Tabla con 4 imágenes -->
+    <table>
+        <tr>
+            <td><img src="image1.jpg" alt="Imagen 1" width="100" onclick="mostrarImagen('image1.jpg')"></td>
+            <td><img src="image2.jpg" alt="Imagen 2" width="100" onclick="mostrarImagen('image2.jpg')"></td>
+        </tr>
+        <tr>
+            <td><img src="image3.jpg" alt="Imagen 3" width="100" onclick="mostrarImagen('image3.jpg')"></td>
+            <td><img src="image4.jpg" alt="Imagen 4" width="100" onclick="mostrarImagen('image4.jpg')"></td>
+        </tr>
+    </table>
+
+    <!-- Iframe para mostrar la imagen seleccionada -->
+    <iframe id="imagenIframe" width="600" height="400"></iframe>
+
+    <script>
+        // Función para mostrar la imagen en el iframe
+        function mostrarImagen(imagen) {
+            var iframe = document.getElementById('imagenIframe');
+            iframe.src = imagen; 
+        }
+    </script>
+
+</body>
+</html>
