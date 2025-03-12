@@ -1,0 +1,41 @@
+body{
+	background-color: steelblue;
+}
+
+table{
+	width: 100%;
+	border: 1px solid lightgray;
+	border-collapse: collapse;/* Une las lineas de las tablas */
+	font-family: arial, verdana, sans-serif;
+	caption-side: top;
+	margin: auto;
+}
+
+td{
+	border: 1px solid lightgray;
+	padding: 5px;
+	text-align: justify;
+}
+
+th{
+	border: 1px solid lightgray;
+	padding: 15px;
+	
+}
+table tr:nth-child(odd){
+	background-color: beige;
+}
+
+table tr:nth-child(even){
+	background-color: lightblue;
+}
+
+tr th{
+	background-color: skyblue;
+	color: white;
+}
+
+table tr:hover{
+	background-color: darkblue;
+	color: white;
+}
