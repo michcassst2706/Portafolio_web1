@@ -1,0 +1,46 @@
+*{
+	margin: 0;
+	padding: 0px;
+}
+
+.contenedor{
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+}
+
+.encabezado{
+	padding: 15px;
+	background: skyblue;
+	color: blue;
+	text-align: center;
+	font-size: 18px;
+}
+
+.contenido{
+	display: flex;
+	flex-direction: space-between;
+	flex: 1;	
+}
+
+.caja{
+	border: 1px solid rebeccapurple;
+	margin: 15px;
+	padding: 15px;
+	flex: 1;
+	box-shadow: 5px 5px rgba(0, 0, 0, 0.8);
+	border-radius: 10px;
+}
+
+.pie{
+	padding: 10px;
+	background: cornflowerblue;
+	text-align: center;
+	font-size: 14px;
+}
+
+@media(max-width:500){
+	.contenido{
+		flex-direction: column;
+	}
+}
