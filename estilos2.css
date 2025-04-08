@@ -1,0 +1,24 @@
+ul{
+	list-style-type: none;
+	width: 20%;
+	background-color: blue;
+	padding: 0;
+	margin: 0;
+}	
+
+li a{
+	display: block;
+	background-color: skyblue;
+	padding: 8px;
+	text-decoration: none;
+	font-family: arial;
+}
+li a:hover:not(.activo){
+	background-color: royalblue;
+	color: white;
+}
+
+li a.activo{
+	background-color: darkblue;
+	color: white;
+}

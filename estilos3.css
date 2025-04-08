@@ -1,0 +1,77 @@
+ul{
+	list-style-type: none;
+	width: 20%;
+	background-color: blue;
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	background-color: deepskyblue;
+	position: fixed;
+	overflow: auto;
+}
+
+li a{
+	display: block;
+	background-color: deepskyblue;
+	padding: 8px;
+	text-decoration: none;
+	font-family: arial;
+}
+li a:hover:not(.activo){
+	background-color: royalblue;
+	color: white;
+}
+
+li a.activo{
+	background-color: darkblue;
+	color: white;
+}
+
+.capa1{
+	margin-left: 25%;
+}
+
+@font-face{
+	font-family: "fuente1";
+	src: url("Emblema_One/EmblemaOne-Regular.ttf") format("truetype");
+}
+
+@font-face{
+	font-family: "fuente2";
+	src: url("Doto/Doto-VariableFont_ROND,wght.ttf") format("truetype");
+}
+
+@font-face{
+	font-family: "fuente3";
+	src: url("Silkscreen/Silkscreen-Regular.ttf") format("truetype");
+}
+@font-face{
+	font-family: "fuente4";
+	src: url("Rock_Salt/RockSalt-Regular.ttf") format("truetype");
+}
+
+h1{
+	font-family: 'fuente1';
+	font-weight: 400;
+ 	font-style: normal;
+}
+
+h2{
+  font-family: 'fuente2';
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "ROND" 0;
+}
+h3{
+  font-family: 'fuente3';
+  font-weight: 700;
+  font-style: normal;
+}
+
+p{
+	font-family: 'fuente4';
+  font-weight: 400;
+  font-style: normal;
+}
