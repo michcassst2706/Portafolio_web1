@@ -1,0 +1,74 @@
+/* Fuente y fondo general */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    margin: 40px;
+}
+
+/* Encabezados */
+h1, h2 {
+    color: #1e3a8a;
+    text-align: center;
+}
+
+/* Estilo del formulario */
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 400px;
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Etiquetas e inputs */
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+/* Botón de envío */
+input[type="button"] {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+}
+
+input[type="button"]:hover {
+    background-color: #1d4ed8;
+}
+
+/* Radios */
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* Resultado */
+#resultado {
+    background-color: #e0f2fe;
+    border: 1px solid #90cdf4;
+    padding: 15px;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 20px auto;
+    font-style: italic;
+}
