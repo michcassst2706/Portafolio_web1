@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Propina</title>
+    <link rel="stylesheet" href="practico3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Propina</h1>
+        <form id="calculadora-propina">
+            <div class="input-group">
+                <label for="subtotal">Total a pagar:</label>
+                <input type="number" id="subtotal" min="0" step="0.01" placeholder="Ingrese el total" required>
+            </div>
+            <div class="input-group">
+                <label for="porcentaje">Porcentaje de propina (%):</label>
+                <input type="number" id="porcentaje" min="0" max="100" placeholder="Ingrese el porcentaje" list="porcentajesSugeridos" required>
+                <datalist id="porcentajesSugeridos">
+                    <option value="5">5%</option>
+                    <option value="10">10%</option>
+                    <option value="15">15%</option>
+                    <option value="20">20%</option>
+                </datalist>
+            </div>
+            <button type="button" id="calcular">Calcular Propina</button>
+        </form>
+
+        <div id="resultado" class="hidden">
+            <h2>Resultado</h2>
+            <p>Propina: <span id="resultado-propina"></span></p>
+            <p>Total a pagar con propina: <span id="resultado-total"></span></p>
+        </div>
+    </div>
+
+    <script src="parpractico3.js"></script>
+</body>
+</html>
