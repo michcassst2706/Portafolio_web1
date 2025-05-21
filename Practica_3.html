@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 3 - Diagnóstico de Física</title>
+    <link rel="stylesheet" href="Estilosp3.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+
+    <h1>Evaluación de Física</h1>
+    <form id="quizForm">
+        <label>1. ¿La fuerza se mide en Newton?</label>
+        <input type="radio" name="q1" value="Sí"> Sí
+        <input type="radio" name="q1" value="No"> No
+
+        <label>2. ¿La velocidad de un objeto en movimiento rectilíneo uniforme cambia constantemente?</label>
+        <input type="radio" name="q2" value="Sí"> Sí
+        <input type="radio" name="q2" value="No"> No
+
+        <label>3. ¿La segunda ley de Newton es "F = m * a"?</label>
+        <input type="radio" name="q3" value="Sí"> Sí
+        <input type="radio" name="q3" value="No"> No
+        <br><br>
+        <button type="button" onclick="evaluar()">Evaluar</button>
+    </form>
+
+    <div id="resultado"></div>
+
+    <canvas id="grafico" width="400" height="200"></canvas>
+
+    <button onclick="generarPDF()">Descargar PDF</button>
+
+    <script src="scriptp3.js"></script>
+</body>
+</html>
